@@ -28,7 +28,7 @@ jobs:
         if: matrix.platform == 'ubuntu-20.04'
         run: |
           sudo apt-get update
-          sudo apt-get install --no-install-recommends -y libopenjp2-tools
+          sudo apt-get install --no-install-recommends -y libopenjp2-tools gcc-multilib g++-multilib
       - name: install frontend dependencies
         run: pnpm install
       - name: publish
