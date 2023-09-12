@@ -1,10 +1,8 @@
 {
   "appId": "me.xhayper.bluetop",
   "productName": "BlueTop",
-  "windows": {
-    "nsis": {
-      "oneClick": false
-    }
+  "nsis": {
+    "oneClick": false
   },
   "mac": {
     "category": "public.app-category.social-networking"
