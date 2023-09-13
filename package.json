@@ -1,7 +1,7 @@
 {
   "name": "bluetop",
   "version": "1.0.2",
-  "description": "Just an tauri app that load Bluesky as a desktop",
+  "description": "Just an Electron app that load Bluesky as a desktop",
   "main": "dist-ts/index.js",
   "private": true,
   "scripts": {
