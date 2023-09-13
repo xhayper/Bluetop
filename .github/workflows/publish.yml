@@ -31,6 +31,8 @@ jobs:
           sudo apt-get install --no-install-recommends -y libopenjp2-tools gcc-multilib g++-multilib
       - name: install frontend dependencies
         run: pnpm install
+      - name: compile frontend
+        run: pnpm run build
       - name: publish
         run: npx electron-builder --publish onTagOrDraft
         env:
