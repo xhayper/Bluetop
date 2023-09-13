@@ -1,4 +1,4 @@
-import { app, shell, BrowserWindow } from 'electron';
+import { app, shell, nativeTheme, BrowserWindow } from 'electron';
 import Store from 'electron-store';
 import path from 'node:path';
 
@@ -19,7 +19,7 @@ const createWindow = () => {
 
     title: 'Bluetop',
     icon: path.join(__dirname, '../', 'build', 'icon.ico'),
-    backgroundColor: '#000000',
+    backgroundColor: nativeTheme.shouldUseDarkColors ? '#000000' : '#ffffff',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
