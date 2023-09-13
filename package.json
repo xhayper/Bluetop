@@ -3,13 +3,17 @@
   "version": "1.0.2",
   "description": "Just an tauri app that load Bluesky as a desktop",
   "main": "dist-ts/index.js",
+  "private": true,
   "scripts": {
     "dev": "pnpm run build && electron .",
     "build": "del-cli dist-ts && tsc",
     "app:dir": "pnpm run build && electron-builder --dir",
     "app:dist": "pnpm run build && electron-builder"
   },
-  "keywords": [],
+  "keywords": [
+    "bluesky",
+    "electron"
+  ],
   "author": "xhayper",
   "license": "MIT",
   "dependencies": {
