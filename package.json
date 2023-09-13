@@ -2,10 +2,12 @@
   "name": "bluetop",
   "version": "1.0.1",
   "description": "Just an tauri app that load Bluesky as a desktop",
-  "main": "src/index.js",
+  "main": "dist-ts/index.js",
   "scripts": {
-    "app:dir": "electron-builder --dir",
-    "app:dist": "electron-builder"
+    "dev": "pnpm run build && electron .",
+    "build": "del-cli dist-ts && tsc",
+    "app:dir": "pnpm run build && electron-builder --dir",
+    "app:dist": "pnpm run build && electron-builder"
   },
   "keywords": [],
   "author": "xhayper",
@@ -14,7 +16,8 @@
     "electron-store": "^8.1.0"
   },
   "devDependencies": {
-    "electron": "26.2.0",
+    "del-cli": "^5.1.0",
+    "electron": "26.2.1",
     "electron-builder": "^24.6.4"
   }
 }

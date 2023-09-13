@@ -90,3 +90,6 @@ typings/
 
 # ElectronBuilder
 dist/
+
+# Typescript
+dist-ts/
