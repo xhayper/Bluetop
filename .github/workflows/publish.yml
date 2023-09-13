@@ -5,7 +5,7 @@ on:
       - release
 
 jobs:
-  publish-tauri:
+  publish-electron:
     permissions:
       contents: write
     strategy:
